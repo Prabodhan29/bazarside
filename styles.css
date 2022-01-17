@@ -12,7 +12,6 @@ img {
 
 body {
   background-color: #f7f7f7;
-  
 }
 
 /* Background SVGs */
@@ -156,4 +155,15 @@ body {
 .message_reset_password_after_submitting a {
   color: #2f3a8f;
   text-decoration: none;
+}
+
+/* Media queries  */
+@media (max-width: 610px) {
+  .reset_password_page {
+    width: 300px;
+  }
+
+  .reset_password_text p {
+    font-size: 1.4rem;
+  }
 }
