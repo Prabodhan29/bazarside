@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #f7f7f7;
+  
+}
+
+/* Background SVGs */
+.background_svg svg {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100em;
+}
+
+/* Reset Password Page */
+.reset_password_page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.reset_password_text {
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.reset_password_text p {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.reset_password_text::after {
+  content: "";
+  height: 2.5px;
+  width: 35%;
+  background: #ea005e;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -17.5%;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 400px;
+  margin: 2rem auto 100px;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #ea005e;
+  top: 0;
+  left: 0;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #fff;
+  width: 100%;
+  border: 1px solid rgb(219, 214, 214);
+  margin: 0.6rem 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  right: 0;
+}
+
+.form label::after {
+  content: "*";
+  color: #000;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  margin-top: 1rem;
+  background: #ea005e;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #2f3a8f;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.form .message a {
+  color: #2f3a8f;
+  text-decoration: none;
+}
+
+/********************** RESET PASSWORD PAGE AFTER SUBMITTING********************/
+.reset_password_form_after_submitting p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  line-height: 25px;
+  align-items: center;
+}
+
+.message_reset_password_after_submitting {
+  margin: 15px 0 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 1rem;
+}
+
+.message_reset_password_after_submitting a {
+  color: #2f3a8f;
+  text-decoration: none;
+}
